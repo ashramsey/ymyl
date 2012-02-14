@@ -2,3 +2,4 @@
 <% @users.each do |user| %>
   <p>User: <%=link_to user.name, user %></p>
 <% end %>
+<%= "Welcome #{current_user.name}" unless current_user.nil?%>

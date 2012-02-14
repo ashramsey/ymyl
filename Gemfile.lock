@@ -101,6 +101,11 @@ GEM
       guard (>= 0.2.2)
     guard-rspec (0.6.0)
       guard (>= 0.10.0)
+    heroku (2.20.0)
+      launchy (>= 0.3.2)
+      rest-client (~> 1.6.1)
+      rubyzip
+      term-ansicolor (~> 1.0.5)
     hike (1.2.1)
     i18n (0.6.0)
     journey (1.0.1)
@@ -127,6 +132,7 @@ GEM
     mysql2 (0.3.11)
     nokogiri (1.5.0)
     orm_adapter (0.0.6)
+    pg (0.13.1)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.1)
@@ -157,6 +163,8 @@ GEM
     rb-fsevent (0.9.0)
     rdoc (3.12)
       json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec (2.8.0)
       rspec-core (~> 2.8.0)
       rspec-expectations (~> 2.8.0)
@@ -228,9 +236,11 @@ DEPENDENCIES
   guard-livereload (>= 0.3.0)
   guard-rails (>= 0.0.3)
   guard-rspec (>= 0.4.3)
+  heroku
   jquery-rails
   launchy (>= 2.0.5)
   mysql2 (~> 0.3.11)
+  pg
   rails (= 3.2.1)
   rails-footnotes (>= 3.7)
   rb-fsevent

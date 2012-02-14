@@ -6,6 +6,7 @@ gem 'rails', '3.2.1'
 #application type gems
 gem 'unicorn'
 gem 'mysql2', '~> 0.3.11'
+gem "heroku"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -46,3 +47,7 @@ gem "guard-cucumber", ">= 0.6.1", :group => :development
 gem "devise", ">= 2.0.0"
 gem "bootstrap-sass"
 gem "rails-footnotes", ">= 3.7", :group => :development
+
+group :production do
+  gem 'pg'
+end
